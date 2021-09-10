@@ -20,6 +20,8 @@ import { SassGuidelines } from './views/guidelines/sass';
 
 import WritingGuidelines from './views/guidelines/writing';
 
+import WazuhMockup from './views/wazuh/wazuh_mockup';
+
 // Services
 
 import { ColorPaletteExample } from './views/color_palette/color_palette_example';
@@ -322,6 +324,15 @@ const createMarkdownExample = (example, title) => {
 };
 
 const navigation = [
+  {
+    name: 'Wazuh',
+    items: [
+      {
+        name: 'Wazuh Mockup',
+        component: WazuhMockup,
+      },
+    ],
+  },
   {
     name: 'Guidelines',
     items: [
