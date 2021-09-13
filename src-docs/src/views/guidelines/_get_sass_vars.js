@@ -20,7 +20,7 @@ export const getSassVars = (theme) => {
     case 'amsterdam-light':
       palette = { ...lightColors, ...lightAmsterdamColors };
       break;
-    case 'dark':
+    case 'default-dark':
       palette = darkColors;
       break;
     default:
