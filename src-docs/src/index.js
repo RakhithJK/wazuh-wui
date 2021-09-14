@@ -13,6 +13,8 @@ import { registerTheme, ExampleContext } from './services';
 import Routes from './routes';
 import themeLight from './theme_light.scss';
 import themeDark from './theme_dark.scss';
+import themeWazuhLight from './theme_wazuh_light.scss';
+import themeWazuhDark from './theme_wazuh_dark.scss';
 import themeAmsterdamLight from './theme_amsterdam_light.scss';
 import themeAmsterdamDark from './theme_amsterdam_dark.scss';
 import { ThemeProvider } from './components/with_theme/theme_context';
@@ -23,6 +25,8 @@ registerTheme('light', [themeLight]);
 registerTheme('dark', [themeDark]);
 registerTheme('amsterdam-light', [themeAmsterdamLight]);
 registerTheme('amsterdam-dark', [themeAmsterdamDark]);
+registerTheme('wazuh-light', [themeWazuhLight]);
+registerTheme('wazuh-dark', [themeWazuhDark]);
 
 // Set up app
 

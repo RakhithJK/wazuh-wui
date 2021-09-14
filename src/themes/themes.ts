@@ -13,6 +13,14 @@ export interface EUI_THEME {
 
 export const EUI_THEMES: EUI_THEME[] = [
   {
+    text: 'Wazuh Light',
+    value: 'wazuh-light',
+  },
+  {
+    text: 'Wazuh Dark',
+    value: 'wazuh-dark',
+  },
+  {
     text: 'Light',
     value: 'light',
   },

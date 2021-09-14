@@ -4,6 +4,7 @@ import { EUI_THEMES, EUI_THEME } from '../../../../src/themes';
 import { applyTheme } from '../../services';
 import { EuiThemeProvider } from '../../../../src/services';
 import { EuiThemeAmsterdam } from '../../../../src/themes/eui-amsterdam/theme';
+import { WuiThemeWazuh } from '../../../../src/themes/wui/theme';
 import { EuiThemeDefault } from '../../../../src/themes/eui/theme';
 
 const THEME_NAMES = EUI_THEMES.map(({ value }) => value);
@@ -41,9 +42,24 @@ export class ThemeProvider extends React.Component<object, State> {
     });
   };
 
+  getCurrentTheme = (theme: string) => {
+    switch (theme) {
+      case 'amsterdam-light':
+      case 'amsterdam-dark':
+        return EuiThemeAmsterdam;
+      case 'wazuh-light':
+      case 'wazuh-dark':
+        return WuiThemeWazuh;
+      default:
+        return EuiThemeDefault;
+    }
+  };
+
   render() {
     const { children } = this.props;
     const { theme } = this.state;
+    const currentTheme = this.getCurrentTheme(theme);
+
     return (
       <ThemeContext.Provider
         value={{
@@ -52,9 +68,7 @@ export class ThemeProvider extends React.Component<object, State> {
         }}
       >
         <EuiThemeProvider
-          theme={
-            theme.includes('amsterdam') ? EuiThemeAmsterdam : EuiThemeDefault
-          }
+          theme={currentTheme}
           colorMode={theme.includes('light') ? 'light' : 'dark'}
         >
           {children}

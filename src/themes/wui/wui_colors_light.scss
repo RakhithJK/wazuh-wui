@@ -1,0 +1,21 @@
+@import '../../global_styling/functions/index';
+
+
+// Core
+$euiColorPrimary: #256BD1;
+$euiColorSecondary: #207D82;
+$euiColorAccent: #FEDD0B;
+
+// Status
+$euiColorSuccess: $euiColorSecondary;
+$euiColorWarning: #E15202;
+$euiColorDanger: #BD271E;
+
+// Grays
+$euiColorEmptyShade: #FFF;
+$euiColorLightestShade: #F6F6F6;
+$euiColorLightShade: #E0E4EA;
+$euiColorMediumShade: #98A2B3;
+$euiColorDarkShade: #8C8F96;
+$euiColorDarkestShade: #292929;
+$euiColorFullShade: #000;
