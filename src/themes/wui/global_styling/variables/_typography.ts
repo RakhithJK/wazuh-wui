@@ -13,5 +13,5 @@ import { font } from '../../../../global_styling/variables/_typography';
  */
 export const font_wui = {
   ...font,
-  family: "'Inter', BlinkMacSystemFont, Helvetica, Arial, sans-serif",
+  family: "Manrope, 'Inter', BlinkMacSystemFont, Helvetica, Arial, sans-serif",
 };

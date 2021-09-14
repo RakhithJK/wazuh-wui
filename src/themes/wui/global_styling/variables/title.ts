@@ -20,7 +20,7 @@ import { computed } from '../../../../services/theme/utils';
 
 // For Amsterdam, change all font-weights to bold and remove letter-spacing
 
-export const title_ams: EuiThemeTitle = SCALES.reduce((acc, elem) => {
+export const title_wui: EuiThemeTitle = SCALES.reduce((acc, elem) => {
   acc[elem] = {
     ...title[elem],
     fontWeight: computed(([fontWeight]) => fontWeight, ['font.weight.bold']),
