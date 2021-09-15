@@ -3,6 +3,13 @@
 .euiTab {
   font-weight: $euiFontWeightMedium;
   height: $euiSizeXXL + $euiSizeS;
+
+  &.euiTab-isSelected {
+
+    &::after {
+      background-color: transparent;
+    }
+  }
 }
 
 .euiTabs--small .euiTab {
