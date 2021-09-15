@@ -2,9 +2,9 @@
 @mixin euiFormControlFocusStyle($borderOnly: false) {
   // sass-lint:disable-block indentation, empty-args
   background-color: tintOrShade($euiColorEmptyShade, 0%, 40%);
-  background-image: euiFormControlGradient();
   background-size: 100% 100%; // 1
   outline: none; // Blanket remove all outlines relying on our own bottom border
+  border: 1px solid $euiFocusBorderColorGeneral;
 
   @if ($borderOnly) {
     box-shadow: inset 0 0 0 1px $euiFormBorderColor;
