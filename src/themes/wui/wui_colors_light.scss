@@ -44,4 +44,4 @@ $euiColorChartLines: $euiColorLightShade;
 $euiColorChartBand: tint($euiColorLightestShade, 2.5%);
 
 // Focus border
-$euiFocusBorderColor: #256BD1;
+$euiFocusBorderColor: $euiColorPrimary;
