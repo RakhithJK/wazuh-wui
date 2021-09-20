@@ -1,5 +1,5 @@
-@import '../../global_styling/functions/index';
-
+// This extra import allows any variables that are created via functions to work when loaded into JS
+@import '../../global_styling/variables/colors';
 
 // Core
 $euiColorPrimary: #256BD1;
@@ -8,7 +8,7 @@ $euiColorAccent: #FEDD0B;
 
 // Status
 $euiColorSuccess: $euiColorSecondary;
-$euiColorWarning: #E15202;
+$euiColorWarning: #FF7A2F;
 $euiColorDanger: #BD271E;
 
 // Grays
@@ -19,3 +19,29 @@ $euiColorMediumShade: #98A2B3;
 $euiColorDarkShade: #8C8F96;
 $euiColorDarkestShade: #292929;
 $euiColorFullShade: #000;
+
+// Backgrounds
+$euiPageBackgroundColor: tint($euiColorLightestShade, 50%);
+$euiColorHighlight: tint($euiColorWarning, 90%);
+
+// Variations from core
+$euiTextColor: $euiColorDarkestShade;
+$euiTitleColor: $euiTextColor;
+$euiTextSubduedColor: makeHighContrastColor($euiColorMediumShade);
+$euiColorDisabled: shade($euiTextColor, 70%);
+
+$euiColorPrimaryText: makeHighContrastColor($euiColorPrimary);
+$euiColorSecondaryText: makeHighContrastColor($euiColorSecondary);
+$euiColorAccentText: makeHighContrastColor($euiColorAccent);
+$euiColorWarningText: makeHighContrastColor($euiColorWarning);
+$euiColorDangerText: makeHighContrastColor($euiColorDanger);
+$euiColorDisabledText: makeDisabledContrastColor($euiColorDisabled);
+$euiColorSuccessText: $euiColorSecondaryText;
+$euiLinkColor: $euiColorPrimaryText;
+
+// Charts
+$euiColorChartLines: $euiColorLightShade;
+$euiColorChartBand: tint($euiColorLightestShade, 2.5%);
+
+// Focus border
+$euiFocusBorderColor: #256BD1;

@@ -1,4 +1,4 @@
-@import '../../global_styling/functions/index';
+@import '../eui/eui_colors_dark.scss';
 
 // These colors stay the same no matter the theme
 $euiColorGhost: #FFF;
@@ -29,7 +29,7 @@ $euiPageBackgroundColor: shade($euiColorLightestShade, 45%);
 $euiColorHighlight: #2E2D25;
 
 // Variations from core
-$euiTextColor: #DFE5EF;
+$euiTextColor: $euiColorDarkestShade;
 $euiTitleColor: $euiTextColor;
 $euiTextSubduedColor: makeHighContrastColor($euiColorMediumShade);
 $euiColorDisabled: shade($euiTextColor, 70%);
@@ -51,3 +51,7 @@ $euiColorChartBand: tint($euiColorLightestShade, 2.5%);
 // Shadows
 $euiShadowColor: #000;
 $euiShadowColorLarge: #000;
+
+// Focus border
+$euiFocusBorderColor: #256BD1;
+
